@@ -1,5 +1,10 @@
 class ArticlesController < ApplicationController
 
+  #блокируем доступ к созданию новой записи
+
+    before_action :authenticate_user!
+
+
   def index
     @articles = Article.all
   end
