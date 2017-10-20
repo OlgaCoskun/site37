@@ -2,7 +2,7 @@ class ArticlesController < ApplicationController
 
   #блокируем доступ к созданию новой записи
 
-    before_action :authenticate_user!
+    before_action :authenticate_user!, :only => [:new, :create] #only - для создания статьи делаем авторизацию
 
 
   def index
