@@ -60,3 +60,7 @@ group :test, :development do
   gem 'shoulda-matchers'
   gem "factory_bot_rails", "~> 4.0"
 end
+
+group :production do
+  gem 'pg', '0.20.0'
+end
