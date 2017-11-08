@@ -40,6 +40,8 @@ group :development, :test do
   gem 'capybara', '~> 2.4'
   gem 'selenium-webdriver'
   gem 'sqlite3'
+  #gem 'database_cleaner'
+  gem 'database_cleaner', git: 'git@github.com:DatabaseCleaner/database_cleaner.git'
 end
 
 group :development do
